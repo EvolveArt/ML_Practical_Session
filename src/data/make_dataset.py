@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.model_selection import train_test_split
 
 # # -*- coding: utf-8 -*-
 # import click
@@ -32,5 +33,9 @@ import numpy as np
 #     main()
 
 X_raw = np.load("../data/external/MNIST_X_28x28.npy")
-X = X_raw.flatten().reshape(70000, 784)
+X = X_raw.flatten().reshape(70000, 784)  # Flatten the data for convenience
 Y = np.load("../data/external/MNIST_y.npy")
+
+
+def get_split_data(test_size=0.2):
+    return train_test_split(X, Y, test_size=0.2, random_state=42, shuffle=True)
