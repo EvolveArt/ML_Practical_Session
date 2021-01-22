@@ -1,5 +1,9 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.decomposition import PCA
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import MinMaxScaler
+
 
 # # -*- coding: utf-8 -*-
 # import click
@@ -37,5 +41,18 @@ X = X_raw.flatten().reshape(70000, 784)  # Flatten the data for convenience
 Y = np.load("../data/external/MNIST_y.npy")
 
 
-def get_split_data(test_size=0.2):
-    return train_test_split(X, Y, test_size=0.2, random_state=42, shuffle=True)
+def get_split_data(features=X, labels=Y, test_size=0.2):
+    return train_test_split(
+        features, labels, test_size=0.2, random_state=42, shuffle=True
+    )
+
+
+def getNormalizedProjectedData(components=2):
+    steps = Pipeline(
+        [
+            ("minmax", MinMaxScaler()),
+            ("pca", PCA(n_components=components, random_state=42)),
+        ]
+    )
+    X_transformed = steps.fit_transform(X)
+    return X_transformed
