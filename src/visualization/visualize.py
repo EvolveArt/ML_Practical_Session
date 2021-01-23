@@ -165,3 +165,26 @@ def plotClustersDigits(cluster_centers):
         axi.set(xticks=[], yticks=[])
         axi.imshow(center, interpolation="nearest", cmap=plt.cm.gray)
 
+
+def plot_model_results(hist):
+
+    plt.figure(figsize=(10, 5))
+
+    # Accuracy History
+    plt.subplot(121)
+    plt.plot(hist.history["accuracy"])
+    plt.plot(hist.history["val_accuracy"])
+    plt.title("model accuracy")
+    plt.ylabel("accuracy")
+    plt.xlabel("epoch")
+    plt.legend(["train", "test"], loc="upper left")
+
+    # Loss History
+    plt.subplot(122)
+    plt.plot(hist.history["loss"])
+    plt.plot(hist.history["val_loss"])
+    plt.title("model loss")
+    plt.ylabel("loss")
+    plt.xlabel("epoch")
+    plt.legend(["train", "test"], loc="upper left")
+
