@@ -11,7 +11,7 @@ backcall=0.1.0=py37_0
 black=19.10b0=py_0
 blas=1.0=mkl
 bleach=3.1.0=py37_0
-ca-certificates=2020.12.8=haa95532_0
+ca-certificates=2021.1.19=haa95532_0
 cachetools=4.0.0=pypi_0
 certifi=2020.12.5=py37haa95532_0
 chardet=3.0.4=pypi_0
@@ -27,6 +27,7 @@ gast=0.2.2=pypi_0
 google-auth=1.10.0=pypi_0
 google-auth-oauthlib=0.4.1=pypi_0
 google-pasta=0.1.8=pypi_0
+graphviz=2.38=hfd603c8_2
 grpcio=1.26.0=pypi_0
 h5py=2.10.0=pypi_0
 icc_rt=2019.0.0=h0cc432a_1
@@ -102,6 +103,7 @@ py4j=0.10.7=pypi_0
 pyarrow=0.15.1=pypi_0
 pyasn1=0.4.8=pypi_0
 pyasn1-modules=0.2.7=pypi_0
+pydot=1.4.1=py37_0
 pygments=2.5.2=py_0
 pylint=2.4.4=py37_0
 pyparsing=2.4.6=pypi_0
@@ -110,6 +112,7 @@ pyrsistent=0.15.6=py37he774522_0
 pyspark=2.4.4=pypi_0
 python=3.7.5=h8c8aaf0_0
 python-dateutil=2.8.1=py_0
+python-graphviz=0.15=pyhd3eb1b0_0
 pytz=2019.3=pypi_0
 pywin32=227=py37he774522_0
 pywinpty=0.5.7=py37_0
