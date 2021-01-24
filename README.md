@@ -1,7 +1,25 @@
-ml_practical_session
+Practical Session of the Machine Learning Course
 ==============================
 
-A simple benchmark of classifiers for the MNIST dataset.
+    This project is part of the Machine Learning Course at the Mines de Saint-Etienne Engineering School.
+    It showcases many Machine Learning methods, unsupervised as well as supervised ones.
+
+    The dataset used is the well-known MNIST digits Dataset.
+
+    You can find the complete report of the project in the `/reports` folder.
+
+    The project tackles many algorithms in the following order :
+        - Principal Component Analysis
+        - K-Means Clustering
+        - EM Gaussian Mixture
+        - Decision Tree
+        - Support Vector Machines
+        - Gaussian Naive Bayes
+        - Multilayer Perceptron (MLP)
+        - Convolutional Neural Network (CNN)
+
+    If you want to reproduce the project, you can recreate the same environnment using pip or conda and the `requirements.txt` file.
+    Then, you should be able to execute every notebook in the `/notebooks` folder.
 
 Project Organization
 ------------
@@ -11,19 +29,12 @@ Project Organization
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
@@ -53,5 +64,8 @@ Project Organization
 
 
 --------
+
+// TODO : Refractor the notebooks' code in the `/src` folder
+// TODO : Save the trained models in the `/models` folder
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
