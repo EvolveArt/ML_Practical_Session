@@ -65,7 +65,7 @@ Project Organization
 
 --------
 
-// TODO : Refractor the notebooks' code in the `/src` folder
+// TODO : Refractor the notebooks' code in the `/src` folder\
 // TODO : Save the trained models in the `/models` folder
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
